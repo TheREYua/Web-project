@@ -1,0 +1,55 @@
+﻿#header
+{
+    background-color:#d1e0e0;
+    border-bottom:solid;
+    border-color:#a5c0c0;
+    height:8%;
+    width:100%;
+    position:fixed;
+}
+.buttons
+{
+    margin:auto;
+    color: black;
+    font-weight: 400;
+    height:50px;
+    width:170px;
+    text-align: center;
+    font-size: 25px;
+    background-color:#d1e0e0;
+}
+
+#headerCase
+{
+    width:70%;
+    margin:auto;
+}
+
+.hedderButtons
+{
+    display:inline-block;
+    padding:1%;
+}
+
+#search
+{
+    padding:3px;
+    width:inherit;
+    height:200%;
+    width:150%;
+}
+
+#headerHome
+{
+    border:none;
+}
+#headerCategories
+{
+    border:none;
+}
+#headerLogin
+{
+    border:none;
+    position:initial;
+    margin-left:100%;
+}
