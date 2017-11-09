@@ -1,8 +1,13 @@
 ﻿body 
 {
-    background-color:lightblue;
+    /*background-color:white;*/
+     background: url(../Images/фон4.gif) no-repeat right top;
+
     margin:0px;
 }
+
+
+
 
 #main
 {
@@ -26,6 +31,20 @@
     border-color:#a5c0c0;
 }
 
+
+.topb{ /* кнопка вверх*/
+    width:2.8%;
+    position:fixed;
+    cursor:pointer;
+    bottom:10px;
+    left:10px;
+    right:850px;
+    font-size:52px;
+   height:15%;
+  align-items:center;
+  
+}
+
 .img
 {
     width:100%;
@@ -36,22 +55,39 @@
 .topic
 {
     background-color:ghostwhite;
-    border:solid;
+   border:solid;
     text-align:left;
-    border-color:darkgray;
-    border-width:1px;
-    padding:30px;
-    margin:8px;
+    border-color:darkgrey;
+    border-width:10px; /*ширина рамки*/
+    padding:30px; /*відступи всередині новин*/
+    margin:15px; /*відступи в контейнері зліва і справа*/
     margin-bottom:10px;
     display:inline-block;
     width:25%;
     height:5%;
 }
 
-.title
+/*.title /*заголовок новини
 {
     font-size:150%;
     font-family:'Comic Sans MS';
+
+}*/
+
+.title /*заголовок новини*/
+{
+    font-size:189%;
+   font-family:'Bell MT';
+    font-weight:bold;
+     text-align:left;
+    border-color:black;
+    border-width:10px; /*ширина рамки*/
+    padding:0px; /*відступи всередині новин*/
+    margin:2px; /*відступи в контейнері зліва і справа*/
+    margin-bottom:15px;
+    
+    width:95%;
+    
 
 }
 
@@ -61,10 +97,12 @@
     font-size:200%;
     border-bottom:solid;
     border-top:solid;
-    padding:7px;
+    padding:1px;
     padding-left:3%;
     background-color:#d1e0e0;
     border-color:#a5c0c0;
+    font-family:'Bree';
+ font-weight: bolder;
 }
 
 .publisedDate
@@ -77,14 +115,17 @@
 .description
 {
     font-size:150%;
+    text-align:center;
+    
 }
 
 .section
 {
-    background-color:#e1eaea;
-    padding-bottom:20px;
+    background-color:#d5eaea;
+    padding-bottom:7px;
     display:inline-block;
     width:100%;
+    
 }
 
 
@@ -110,7 +151,7 @@ A:active
 A:hover 
 {
     text-decoration:solid;
-    color: black;
-    background-color:lightgray;
+
+     background: linear-gradient(to top, rgba(169, 169, 169, 0.47), #ffffff);
     font-variant:initial;
 } 

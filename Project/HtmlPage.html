@@ -3,41 +3,78 @@
 <head>
     <link href="CSS/StyleSheet.css" type="text/css" rel="stylesheet">
     <link href="CSS/HeaderStyles.css" type="text/css" rel="stylesheet">
-    <title>Project</title>
+    <title>News</title>
 	<meta charset="utf-8" />
 
     <script src="Scripts/jquery-3.2.1.js"></script>
     <script src="Scripts/JavaScript.js"></script>
-</head>
-<body>
-    <div id="header">
-        <header>
-            <div id="headerCase">
-                <div class="hedderButtons"><button id="headerHome" class="buttons">Home</button></div>
-                <div class="hedderButtons"><button id="headerCategories" class="buttons">Categories</button></div>
-                <div class="hedderButtons"><input id="search" type="text" placeholder="Search" /></div>
-                <div class="hedderButtons"><button id="headerLogin" class="buttons">Login</button></div>
-            </div>
-        </header>
-    </div>
-    <!--<div id="menu"></div>-->
 
-        <div id="main">
-            <div class="section" id="hot">
-                <div class="sectionTitle">Hot headlines</div>
+        </head>
+        <body>
+            <div id="header">
+                <header>
+                    <div id="headerCase">
+                        <div class="hedderButtons"><button id="headerHome" class="buttons">Home</button></div>
+                        <div class="hedderButtons">
+                            <!--"side"-->
+                            <ul class="menu">
+                                <li class="menu__list">
+
+
+
+                                    <button id="headerCategories" class="buttons">Categories</button>
+                                    <ul class="menu__drop">
+                                        <li><a href="#">Hot headlines</a></li>
+                                        <li><a href="#">Sport</a></li>
+                                        <li><a href="#">Buissnes</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">IT - news</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="hedderButtons"><button id="headerLogin" class="buttons">Login</button></div>
+                        <div class="hedderButtons"><input id="search" type="text" placeholder="Search" /></div>
+
+                    </div>
+                </header>
             </div>
-            <div class="section" id="sport">
-                <div class="sectionTitle">Sport</div>
-            </div>
-            <div class="section" id="buissnes">
-                <div class="sectionTitle">Buissnes</div>
-            </div>
-            <div class="section" id="technology">
-                <div class="sectionTitle">Technology</div>
-            </div>
-            <div class="section" id="it">
-                <div class="sectionTitle">IT - news</div>
-            </div>
-        </div>
-</body>
-</html>
+
+
+            <a href="#" class="topb"> <img src="Images/стрелка.png"></a>
+
+ 
+                <div id="main">
+                    <div  class="section" id="hot">
+                        <div class="sectionTitle">Hot headlines</div>
+                    </div>
+                    <div class="section" id="sport">
+                        <div class="sectionTitle">Sport</div>
+                    </div>
+                    <div class="section" id="buissnes">
+                        <div class="sectionTitle">Buissnes</div>
+                    </div>
+                    <div class="section" id="technology">
+                        <div class="sectionTitle">Technology</div>
+                    </div>
+                    <div class="section" id="it">
+                        <div class="sectionTitle">IT - news</div>
+                    </div>
+                </div>
+
+
+
+
+
+           
+
+
+
+
+
+        </body>
+
+        </html>

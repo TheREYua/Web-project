@@ -1,22 +1,42 @@
-﻿#header
+﻿header
 {
-    background-color:#d1e0e0;
-    border-bottom:solid;
+   
+    background: linear-gradient(to bottom, rgba(169, 169, 169, 0.4), #ffffff);
+    border-bottom:groove;
     border-color:#a5c0c0;
-    height:8%;
+    height:13%;
     width:100%;
     position:fixed;
+    text-align:center;
 }
+    header.sticky {
+        font-size: 24px;
+        line-height: 48px;
+        height: 6%;
+        background: linear-gradient(to bottom, rgba(169, 169, 169, 0.4), #ffffff);
+        padding-left: 20px;
+        transition: all 0.4s ease;
+       
+
+    }
+
+
+
+
 .buttons
 {
     margin:auto;
     color: black;
     font-weight: 400;
-    height:50px;
-    width:170px;
+    height:60px;
+    width:200px;
     text-align: center;
     font-size: 25px;
-    background-color:#d1e0e0;
+    background-color:#a5c0c0;
+    background: linear-gradient(to top, #d1e0e0, #ffffff);
+    border-color:black;
+    font-family:'Bell MT';
+    font-weight:bold;
 }
 
 #headerCase
@@ -28,28 +48,104 @@
 .hedderButtons
 {
     display:inline-block;
-    padding:1%;
+    padding:3%;
+
+    
 }
 
 #search
 {
-    padding:3px;
+    padding:9px;
     width:inherit;
     height:200%;
-    width:150%;
+    width:180%;
 }
 
 #headerHome
-{
-    border:none;
+body {
+    margin:0;
+    padding:0;
+   
 }
 #headerCategories
-{
-    border:none;
+body {
+    margin:0;
+    padding:0;
+
 }
-#headerLogin
+
+a{text-decoration:none;}
+
+ul
 {
-    border:none;
-    position:initial;
-    margin-left:100%;
+ margin:0;
+    padding:0;
+list-style:none;
+}
+
+/*Зовнішній вигляд меню*/
+.side{
+    width:200px;
+margin:20px;
+}
+.menu a{
+    background:#a5c0c0;
+    color:#fff;
+    padding:10px;
+    display:block;
+    border-bottom: 1px solid #666;
+    transition:0.5s all;
+}
+
+.menu a:hover{
+    background:#666;
+    padding: 10px 0 10px 20px ;
+}
+
+.menu li:first-child a,
+.menu li .menu__drop li:first-child a{
+    border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a,
+.menu li .menu__drop li:last-child a{
+    border-radius: 0 0 3px 3px;
+    border-bottom: 0;
+}
+
+.menu li .menu__drop li a{
+     border-radius: 0;
+}
+/*випливаючі меню*/
+
+.menu__list{
+    position:relative;
+}
+.menu__drop{
+    position:absolute;
+    width:100%;
+  /* auto:100%;*/
+    top:-9999em;
+    opacity:0;
+    border-left:10px solid transparent;
+     transition:0.5s opacity;
+
+}
+
+
+.menu__list:hover .menu__drop{
+    opacity:1;
+    top:0;
+}
+
+
+
+
+
+
+#headerLogin
+body {
+    margin:0;
+    padding:0;
+    align-content:inherit;
 }

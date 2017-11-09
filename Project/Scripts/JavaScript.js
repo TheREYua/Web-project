@@ -110,3 +110,5 @@ xhttp.onreadystatechange = function () {
 };
 xhttp.open("GET", urlIt, true);
 xhttp.send();
+
+
