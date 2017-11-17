@@ -4,6 +4,7 @@
      background: url(../Images/фон4.gif) no-repeat right top;
 
     margin:0px;
+  zoom: 65%; /*масштаб сторінки*/
 }
 
 
@@ -11,6 +12,7 @@
 
 #main
 {
+  
     position:initial;
     margin:auto;
     align-content:center;
@@ -152,6 +154,7 @@ A:hover
 {
     text-decoration:solid;
 
-     background: linear-gradient(to top, rgba(169, 169, 169, 0.47), #ffffff);
+  /**   background: linear-gradient(to top, rgba(169, 169, 169, 0.47), #ffffff);*/
+  background:#dee8e8;
     font-variant:initial;
 } 

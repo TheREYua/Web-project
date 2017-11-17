@@ -3,78 +3,182 @@
 <head>
     <link href="CSS/StyleSheet.css" type="text/css" rel="stylesheet">
     <link href="CSS/HeaderStyles.css" type="text/css" rel="stylesheet">
+    <link href="CSS/StyleLoad.css" type="text/css" rel="stylesheet">
     <title>News</title>
-	<meta charset="utf-8" />
+	<meta  charset="utf-8" >
 
     <script src="Scripts/jquery-3.2.1.js"></script>
     <script src="Scripts/JavaScript.js"></script>
-
+    <script src="Scripts/main.js"></script>
         </head>
-        <body>
-            <div id="header">
-                <header>
-                    <div id="headerCase">
-                        <div class="hedderButtons"><button id="headerHome" class="buttons">Home</button></div>
-                        <div class="hedderButtons">
-                            <!--"side"-->
-                            <ul class="menu">
-                                <li class="menu__list">
 
 
 
-                                    <button id="headerCategories" class="buttons">Categories</button>
-                                    <ul class="menu__drop">
-                                        <li><a href="#">Hot headlines</a></li>
-                                        <li><a href="#">Sport</a></li>
-                                        <li><a href="#">Buissnes</a></li>
-                                        <li><a href="#">Technology</a></li>
-                                        <li><a href="#">IT - news</a></li>
 
-                                    </ul>
-                                </li>
+
+
+<body>
+    <div id="header">
+        <header>
+            <div id="headerCase">
+                <div class="hedderButtons"><button id="headerHome" class="buttons">Home</button></div>
+                <div class="hedderButtons">
+
+
+                    <ul class="menu">
+                        <li class="menu__list">
+
+                            <button id="headerCategories" class="buttons">Categories</button>
+                            <!-- <div id="id01" class="modal">-->
+                            <ul class="menu__drop">
+                                <li><a href="#">Hot headlines</a></li>
+                                <li><a href="#">Sport</a></li>
+                                <li><a href="#">Buissnes</a></li>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">IT - news</a></li>
                             </ul>
-                        </div>
-
-
-                        <div class="hedderButtons"><button id="headerLogin" class="buttons">Login</button></div>
-                        <div class="hedderButtons"><input id="search" type="text" placeholder="Search" /></div>
-
-                    </div>
-                </header>
-            </div>
-
-
-            <a href="#" class="topb"> <img src="Images/стрелка.png"></a>
-
- 
-                <div id="main">
-                    <div  class="section" id="hot">
-                        <div class="sectionTitle">Hot headlines</div>
-                    </div>
-                    <div class="section" id="sport">
-                        <div class="sectionTitle">Sport</div>
-                    </div>
-                    <div class="section" id="buissnes">
-                        <div class="sectionTitle">Buissnes</div>
-                    </div>
-                    <div class="section" id="technology">
-                        <div class="sectionTitle">Technology</div>
-                    </div>
-                    <div class="section" id="it">
-                        <div class="sectionTitle">IT - news</div>
-                    </div>
+                            <!---- </div>-->
+                        </li>
+                    </ul>
                 </div>
 
 
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="headerLogin" class="buttons">Login &nabla;</button>
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate">
+
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close ">&times; </span>
+                        </div>
+
+                        <div class="container">
+                            <label><b>Username</b></label>
+                            <input type="text" placeholder="Username" title="Enter Username" name="uname" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" placeholder="Password" title="Enter Password" name="psw" required>
+
+                            <button type="submit">Login</button>
+
+                            <input type="checkbox" checked="checked"> Remember me
+                            <span class="psw">   <a href="#">Forgot password?  </a></span>
+                            <hr> </hr>
+                            <span class="butreg"> <a> Registration  </a> </span>
+
+
+                        </div>
+                    </form>
+
+
+                    <form class="modal-content animate">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close ">&times; </span>
+                        </div>
+                        <div class="container">
+                            <!---- <div class="form-group">-->
+                            <label for="surname"><b>Surname</b></label>
+                            <input type="text" class="form-control" id="surname" aria-describedby="email Help" placeholder="Enter your surname" title="Enter Surname">
+                            <!---- </div>
+                            <div class="form-group">-->
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" title="Enter Name">
+                            <!---- </div>
+                            <div class="form-group">-->
+                            <label for="secondName"><b>Second Name</b></label>
+                            <input type="text" class="form-control" id="secondName" placeholder="Enter your Second Name" title="Enter your Second Name">
+                            <!--</div>
+                            <div class="form-group">-->
+                            <label for="dateOfBirth"><b>Date of Birth</b></label>
+                            <div class="string">
+                                <div class="col">
+                                    <select class="form-control" id="DD" >
+                                        <option selected disabled hidden>DD</option>
+                                    </select>
+
+                                    <select class="form-control" id="MM">
+                                        <option selected disabled hidden>MM</option>
+                                    </select>
+
+
+                                    <select class="form-control" id="YY">
+                                        <option selected disabled hidden>YY</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="SEX"><b>Sex</b></label>
+                            <div class="col">
+                                <select class="form-control" id="sex">
+                                    <option selected disabled hidden><b>Sex</b></option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="socialLink"><b> Link to the social network</b></label>
+                            <input type="text" class="form-control" id="socialLink" placeholder="www.facebook.com/{your id}">
+                        </div>
+                        <button onclick="Register()" type="submit" class="button">Submit</button>
+                    </form>
+                </div>
+                <div class="hedderButtons"><input id="search" type="text" placeholder="Search" class="button"></div>
+            </div>
+    </div>
 
 
 
-           
 
 
 
 
 
-        </body>
+
+
+    </header>
+    </div>
+
+
+    <a href="#" class="topb"> <img src="Images/стрелка.png"></a>
+
+
+    <div id="main">
+        <div class="section" id="hot">
+            <div class="sectionTitle">Hot headlines</div>
+        </div>
+        <div class="section" id="sport">
+            <div class="sectionTitle">Sport</div>
+        </div>
+        <div class="section" id="buissnes">
+            <div class="sectionTitle">Buissnes</div>
+        </div>
+        <div class="section" id="technology">
+            <div class="sectionTitle">Technology</div>
+        </div>
+        <div class="section" id="it">
+            <div class="sectionTitle">IT - news</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
 
         </html>
+
+
+
+
+
+
+
+
+
+
+
